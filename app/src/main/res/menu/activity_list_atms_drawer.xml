@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/baseline_home_black_18dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/ATMsMoney"
+            android:icon="@drawable/dinero"
+            android:title="ATMs with money" />
+        <item
+            android:id="@+id/ATMsPaper"
+            android:icon="@drawable/papel"
+            android:title="ATMs with paper" />
+        <item
+            android:id="@+id/ATMsDeposit"
+            android:icon="@drawable/levantarr"
+            android:title="ATMss to deposit" />
+        <item
+            android:id="@+id/RouteATM"
+            android:icon="@drawable/route"
+            android:title="Route to an ATM" />
+        <item
+            android:id="@+id/ListATM"
+            android:icon="@drawable/listar"
+            android:title="List ATMs" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/Logout"
+                android:icon="@drawable/baseline_exit_to_app_black_18dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

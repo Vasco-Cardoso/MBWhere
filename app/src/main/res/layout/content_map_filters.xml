@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCD403"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MapFilters"
+    tools:showIn="@layout/app_bar_map_filters">
+
+    <Switch
+        android:id="@+id/switch_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="333dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fila" />
+
+    <ImageView
+        android:id="@+id/Map"
+        android:layout_width="413dp"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/todos" />
+
+    <ImageButton
+        android:id="@+id/dinheiro"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Map"
+        app:srcCompat="@drawable/dinero" />
+
+    <ImageButton
+        android:id="@+id/paper"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/deposit"
+        app:layout_constraintTop_toBottomOf="@+id/Map"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageButton
+        android:id="@+id/deposit"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/dinheiro"
+        app:layout_constraintTop_toBottomOf="@+id/Map"
+        app:srcCompat="@drawable/levantarr" />
+
+    <ImageButton
+        android:id="@+id/wheelchair"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toBottomOf="@+id/Map"
+        app:srcCompat="@drawable/wheelchair" />
+
+    <ImageButton
+        android:id="@+id/fila"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/wheelchair"
+        app:layout_constraintTop_toBottomOf="@+id/Map"
+        app:srcCompat="@drawable/people" />
+
+    <Switch
+        android:id="@+id/switch_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinheiro" />
+
+    <Switch
+        android:id="@+id/switch_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paper" />
+
+    <Switch
+        android:id="@+id/switch_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deposit" />
+
+    <Switch
+        android:id="@+id/switch_wheelchair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheelchair" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
